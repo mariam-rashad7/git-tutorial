@@ -1,0 +1,106 @@
+body{
+    background-color: #222;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(213, 83, 83) ;
+    border-radius: 10%;
+    box-shadow: 1px 1px 50px 15px rgb(173, 145, 145);
+    /* animation-name: square;
+    animation-duration:3s;
+    animation-delay: 3s;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode:both ; */
+    /* animation: square 3s linear 3s 1 normal both  running;
+     */
+   animation-name: task;
+   animation-duration: 3s;
+}
+div:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes task{
+    0%{
+        translate: 0 0;
+    }
+    12.5%{
+        translate: 550px 0;
+    }
+    25%{
+        translate: 550px 150px;
+    }
+    37.5%{
+        translate: 0px 150px;
+    }
+    50%{
+        translate: 0 300px;
+    }
+    62.5%{
+        translate: 550px 300px;
+    }
+    75%{
+        translate: 550px 450px;
+    }
+    87.5%{
+        translate: 0 450px;
+    }
+    100%{
+        translate: 0 0;
+    }
+
+}
+
+
+
+/* trying 1*/
+/* @keyframes square{
+    0%{
+        background-color: red;
+        width: 0;
+    }
+    
+    50%{
+        background-color: blue;
+        width: 100%;
+    }
+    100%{
+        width: 100px;
+    }
+} */
+
+/* trying 2*/
+/* @keyframes square{
+    0%{
+        translate: 0 0;
+        background-color: aqua;
+        rotate: 0;
+    }
+    25%{
+        translate: 0 500px;
+        background-color: yellow;
+        rotate: 90deg;
+    }
+    50%{
+        translate:550px  500px;
+        background-color: blueviolet;
+        rotate: 180deg;
+    }
+    75%{
+        translate:550px 0;
+        background-color: blue;
+        rotate: 270deg;
+    }
+    100%{
+        translate: 0 0;
+        background-color: darkgray;
+        rotate: 360deg;
+    }
+} */
+
+
+/* trying 3*/
